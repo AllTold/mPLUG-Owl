@@ -7,8 +7,8 @@ import os
 import json
 import requests
 from .conversation import default_conversation
-from .gradio_patch import Chatbot as grChatbot
-from .gradio_css import code_highlight_css
+#from .gradio_patch import Chatbot as grChatbot
+#from .gradio_css import code_highlight_css
 import datetime
 import uuid
 import base64

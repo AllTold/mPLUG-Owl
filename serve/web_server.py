@@ -10,7 +10,7 @@ import requests
 
 from .conversation import default_conversation
 from .gradio_css import code_highlight_css
-from .gradio_patch import Chatbot as grChatbot
+#from .gradio_patch import Chatbot as grChatbot
 from .serve_utils import (
     add_text, after_process_image, disable_btn, no_change_btn,
     downvote_last_response, enable_btn, flag_last_response,
@@ -295,7 +295,7 @@ def build_demo():
                 gr.Markdown(tos_markdown)
 
             with gr.Column(scale=6):
-                chatbot = grChatbot(elem_id="chatbot", visible=False).style(height=1000)
+                chatbot = gr.Chatbot(elem_id="chatbot", visible=False).style(height=1000)
                 with gr.Row():
                     with gr.Column(scale=8):
                         textbox = gr.Textbox(show_label=False,
